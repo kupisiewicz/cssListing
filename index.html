@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<title>CSS Listing - jQuery plugin demo by Maciej Kupisiewicz</title>
+		<meta name="Title" content="CSS Listing - jQuery plugin demo by Maciej Kupisiewicz" />
+		<meta name="Description" content="Simple plugin to get your css code looks better and fine on your website" />
+		<meta name="Keywords" content="jquery plugin, css, code, " />
+		<meta name="Author" content="Maciej Kupisiewicz" />
+		<meta name="Copyright" content="All Rights Reserved" />
+
+		
+		<meta name="Distribution" content="Global" />
+		<meta http-equiv="Content-Language" content="EN" />
+		<meta name="Robots" content="All" />
+		<meta name="googlebot" content="index, follow" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta name="revisit-after" content="2 days" />
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" href="favicon.ico" /> 
+		
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="x-ua-compatible" content="IE=edge" />
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" /> 
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+<link rel="apple-touch-startup-image" href="static/img/splash.png" />  
+		<link rel="apple-touch-icon-precomposed" href="static/img/icon.png"/>  		
+		
+		<link rel="stylesheet" href="Assets/base.css" media="screen" />	
+		<link rel="stylesheet" href="Assets/cssListing.css" media="screen" />	
+		
+		<meta name="google-site-verification" content="FOqDNTE5C3jL3d3K_mBeomwiCjDwKXVNqrA5hiGqGhw" />
+		
+	</head>
+
+	<body class="loading">
+				
+		<div class="text">
+		
+			<div class="centered">
+		
+				<h2>CSS Listing</h2>
+				<p>jQuery plugin demo by Maciej Kupisiewicz</p>
+				
+				<h3>Three ways to show CSS code</h3>
+				
+				<p>First of all, there are three different ways to format CSS code: declaration in a single line, three line version and fully expanded view. Check it out!</p>
+				
+				<pre class="ver2b">body { font-family: Arial, Helvetica, sans-serif; font-size: 20px; background: #222; }
+body.fontface { font-family: 'Abel', Arial, Helvetica, Verdana, sans-serif; font-size: 30px; }</pre>
+
+				<pre class="ver2a">body { font-family: Arial, Helvetica, sans-serif; font-size: 20px; background: #222; }
+body.fontface { font-family: 'Abel', Arial, Helvetica, Verdana, sans-serif; font-size: 30px; }</pre>
+
+				<pre class="ver2">body { font-family: Arial, Helvetica, sans-serif; font-size: 20px; background: #222; }
+body.fontface { font-family: 'Abel', Arial, Helvetica, Verdana, sans-serif; font-size: 30px; }</pre>
+
+				<h3>Toolbox with text selecting and style switching</h3>
+				
+				<p>Buttons' container can be visible at all time or slide from the top while hover event is called. Any other ways of showing this element can be achieved by setting proper CSS. </p>
+				
+				<pre class="ver1" data-options-classname="test">.jQueryCSSListing .buttons { position: absolute; top: 0px; right: 0px; text-align: right; -webkit-transition: top 0.33s 0.1s ease-out; -moz-transition: top 0.33s 0.1s ease-out; -o-transition: top 0.33s 0.1s ease-out; transition: top 0.33s 0.1s ease-out; top: -30px; }</pre>
+
+				<pre class="ver1a" data-options-classname="test">.jQueryCSSListing.fadeButtons .buttons { position: absolute; top: 0px; right: 0px; text-align: right; -webkit-transition: opacity 0.53s 0.1s ease-out; -moz-transition: opacity 0.53s 0.1s ease-out; -o-transition: opacity 0.53s 0.1s ease-out; transition: opacity 0.53s 0.1s ease-out; opacity: 0; -moz-opacity: 0; -webkit-opacity: 0; }
+.jQueryCSSListing.fadeButtons:hover .buttons { opacity: 1; -moz-opacity: 1; -webkit-opacity: 1; }</pre>
+
+				<pre class="ver1b" data-options-classname="test">.jQueryCSSListing.slideButtonsRight .buttons { position: absolute; top: 0px; right: -100%; text-align: right; -webkit-transition: right 0.33s 0.1s ease-out; -moz-transition: right 0.33s 0.1s ease-out; -o-transition: right 0.33s 0.1s ease-out; transition: right 0.33s 0.1s ease-out; }
+.jQueryCSSListing.slideButtonsRight:hover .buttons { right: 0px; }</pre>
+
+				<h3>What about color and fonts and ...</h3>
+				
+				<p>Any kind of addition style can be added and used. There are several ways to use your own style. For example few dark versions.</p>
+
+				<pre class="ver3">.text .centered .preContainer ol li { margin-left: 0px; padding: 4px 0px; color: #999; font-size: 12px; border-bottom: 1px solid #ddd; color: #111; font-size: 16px; }
+.text .centered .preContainer ol li .class { color: #111; font-size: 16px; }
+.text .centered .preContainer ol li .content { font-size: 14px; line-height: 1.4; }
+.text .centered .preContainer ol li .content .element { display: inline-block; word-wrap: break-word; font-size: 16px; padding: 0px 6px; }
+.text .centered .preContainer ol li .content .element .atr { color: #3e9a69; }</pre>
+
+				<pre class="ver3a">.text .centered .preContainer ol li { margin-left: 0px; padding: 4px 0px; color: #999; font-size: 12px; border-bottom: 1px solid #ddd; color: #111; font-size: 16px; }
+.text .centered .preContainer ol li .class { color: #111; font-size: 16px; }
+.text .centered .preContainer ol li .content { font-size: 14px; line-height: 1.4; }
+.text .centered .preContainer ol li .content .element { display: inline-block; word-wrap: break-word; font-size: 16px; padding: 0px 6px; }
+.text .centered .preContainer ol li .content .element .atr { color: #3e9a69; }</pre>
+
+				<h3>Sorting and merging properties</h3>
+
+				<p></p>
+
+				<pre class="ver4">.text .centered .preContainer ol li .content .element .val { color: #001b3b; }
+.text .centered .preContainer ol li .comment { font-weight: italic; color: #888; font-size: 14px; }
+.text .centered .preContainer ol li .imp { font-weight: italic; color: #aa0000; font-size: 16px; }
+.text .centered .preContainer ol li .quote { font-weight: italic; color: #aa0000; font-size: 16px; }
+.text .centered .preContainer ol li .content::before { content: "" }</pre>
+
+				<p>HTML5 feature Canvas also is worth checking</p>
+				
+				<pre class="ver5">.jQueryCSSListing {  }
+.jQueryCSSListing.compact li .content { display: block; clear: both; }
+.jQueryCSSListing.compact li .content::before { content: "" }
+
+.jQueryCSSListing.lines li .content .element { display: block; white-space: nowrap; font-size: 16px; padding: 0px 6px 0px 12px; clear: both; }
+.jQueryCSSListing.lines li .content .element::before { content: "\00a0" }</pre>
+
+				<p>Using CSS transitions and 3D transforms can be quite tricky. You know it if you want to do it right.</p>
+				
+				<pre class="ver2">#wrapper { display: block !important; }
+#element, /* some comment here */
+#element2 { transition: opacity 0.33s ease-out; -webkit-transition: opacity 0.33s ease-out; -moz-transition: opacity 0.33s ease-out; -o-transition: opacity 0.33s ease-out; /* much transitions */ opacity: 0; -moz-opacity: 0; -webkit-opacity: 0; -o-opacity: 0; filter: alpha(opacity = 0); }
+#element:hover { opacity: 1; -moz-opacity: 1; -webkit-opacity: 1; -o-opacity: 1; filter: alpha(opacity = 100); }
+body.nocsstransitions #element { opacity: 1; -moz-opacity: 1; -webkit-opacity: 1; -o-opacity: 1; filter: alpha(opacity = 100); }</pre>
+	
+			</div><!-- .text -->
+
+		</div><!-- .text -->
+	
+		<script type="text/javascript" src="Assets/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="Assets/jquery.cssListing.js"></script>
+		<script type="text/javascript">
+
+		(function($){
+		
+		
+			$.fn.cssListing.defaults.names.select = 'select';
+			$.fn.cssListing.defaults.names.original = 'pre';
+			
+			$('pre.ver1').cssListing('compact');
+			$('pre.ver1a').cssListing('compact fadeButtons');
+			$('pre.ver1b').cssListing('compact slideButtonsRight');
+			
+			$('pre.ver2').cssListing({ 'className': 'lines staticButtons', names: { select: 'just select'}});
+			$('pre.ver2a').cssListing('compact staticButtons');
+			$('pre.ver2b').cssListing('line staticButtons');
+			
+			$('pre.ver3').cssListing('dark compact');
+			$('pre.ver3a').cssListing('darker compact staticButtons');
+			
+			var somePre = $('pre.ver4').cssListing('').addClass('test');
+
+			$('pre.ver5').cssListing({ 'className': 'compact staticButtons'});
+			
+		})(jQuery);
+
+		</script>
+	</body>
+</html>
